@@ -2,7 +2,9 @@ import { createSlice } from "@reduxjs/toolkit"
 
 const initialState = {
     mode: "light",
-    user: null,
+    user: { // Make sure user property is an object with an empty 'friends' array
+        friends: [],
+      },
     token : null,
     posts: [],
 };
